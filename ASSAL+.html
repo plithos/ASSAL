@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ASSAL+.css">
+    <title>ASSAL+</title>
+</head>
+<body>
+    
+    <div class="contener">
+        <nav>
+            <img src="./-6028597211597748666_120.jpg" class="logo" alt="Logo ASSAL+">
+        
+            <ul>
+                <li><a href="#">ACCUEIL</a></li>
+                <li><a href="#rows">SERVICES</a></li>
+                <li><a href="#riws">FORMATIONS</a></li>
+                <li><a href="#cont">CONTACTS</a></li>
+            </ul>
+            
+        </nav>
+        <ion-icon name="menu-outline" class="menu"></ion-icon>
+        <div class="sitecontener">
+            <p>Welcome To </p>
+            <h1><span class="auto-typing"></span></h1>
+        </div>
+
+
+    </div>
+    <!----------------------------------------------------------------MAIN------------------------------------------>
+    <main>
+        <section class="services">
+            <h1 id="rows">SERVICES</h1>
+            <p class="sss">ASSAL+ vous offre les meilleurs prestations de service en:</p>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-image car-1"></div>
+                    <h2>INFORMATIQUES</h2>
+                    <P>Creation de Site Web</P>
+                    <p>Maintenance informatique et reseau</p>
+                    <p>Vente de matériel informatique</p>
+                </div>
+                <div class="card">
+                    <div class="card-image car-2"></div>
+                    <h2>CONSULTING</h2>
+                    <P>Management</P>
+                    <p>Devéloppement de projet et d'entreprise</p>
+                    <p>Apporteur d'affaire</p>
+                </div>
+                <div class="card">
+                    <div class="card-image car-3"></div>
+                    <h2>SANTE/COSMEIQUE</h2>
+                    <P>Massage</P>
+                    <p>Réflexologie</p>
+                </div>
+                <div class="card">
+                    <div class="card-image car-4"></div>
+                    <h2>MULTIMEDIA</h2>
+                    <P>Reportage</P>
+                    <p>Sonorisation</p>
+                </div>
+            </div>
+
+     <hr>
+
+           <h1 id="riws">FORMATIONS:</h1>
+            <p class="sss">ASSAL+ offre à tous, entreprises, particuliers, professeurs, étudiants, des formations en: </p>
+            <div class="cards">
+                <div class="card">
+                    
+                    <div class="card-image car-1"></div>
+                    <h2>INFORMATIQUES</h2>
+                    <P>Devéloppement Web</P>
+                    <p>office(Word, Excel...)</p>            
+                </div>
+                <div class="card">
+                    <div class="card-image car-5"></div>
+                    <h2>CUISINE</h2>
+                    <P>Cuisines Africaine et Occidentalle</P>
+                    <p>Patisserie</p>          
+                </div>
+            </div>
+               
+            
+        </section>
+
+       <!------------------------------------------section contact-----------------------------------------------------> 
+
+        <section class="contact">
+            <div class="contact">
+                <h2></h2>
+                 <div class="contact-info">
+                      <div id ="cont"><ion-icon name="location-outline"></ion-icon>Attiégou, Lomé, Togo</div>
+                      <div><ion-icon name="mail-outline"></ion-icon> <a href="mailto:assalplus3@gmail.com">assalplus3@gmail.com</a></div>
+                      <div><ion-icon name="call-outline"></ion-icon><a href="tel: +228 91080140/79912887">+228 91080140/79912887</a></div>
+                      <div><ion-icon name="alarm-outline"></ion-icon>Lun - Vend, 08h00 - 18h00</div>
+                  </div>
+                  <div class="contact-form">
+                      
+                      <form class="contacts"  action="mailto:bspirit67@gmail.com" method="post" enctype="text/plain">
+                          <input type="text" id="name" name ="name" class="text-box" placeholder="your name" required>
+                          <input type="email" id="email" name="email" class="text-box" placeholder="your email" required>
+                          <textarea id="message" name="message"   rows="5"  placeholder="your message" required></textarea>
+                          <input type="submit"  class="send-btn" value="send">
+                      </form> 
+                      
+  
+                  </div>
+                 
+              </div>
+        </section>
+           
+    </main>
+
+    <!--------------------------------------------------------FOOTER------------------------------------------------->
+
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="#"> <ion-icon name="logo-whatsapp"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="">ACCUEIL</a></li>
+                    <li><a href="#rows">SERVICES</a></li>
+                    <li><a href="#riws">FORMATIONS</a></li>
+                    <li><a href="cont">CONTACTS</a></li>
+                </ul>
+            </div>
+            
+        </div>
+
+        <div class="footerBottom">
+                    <p>Copyright &COPY;2023; <span class="designer">ASSAL+</span> </p>
+                </div>
+    </footer>     
+
+
+<!-- les script des icone -->
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        
+
+    <!-- les scripts de la barre de menu -->
+  <script>
+    const menuHamburgeur = document.querySelector(".menu")
+    const navLinks = document.querySelector("nav ul")
+
+    menuHamburgeur.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+    })
+  </script>
+
+
+
+<!-- script auto typing -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    let typed = new Typed('.auto-typing', {
+        strings: ['ASSAL+'],
+        typeSpeed:100,
+        backSpeed:100,
+        loop:true,
+        fadeOut:true,
+        fadeOutClass:'typed-fade-out',
+        fadeOutDelay:500
+    })
+</script>
+
+
+
+</body>
+</html>
